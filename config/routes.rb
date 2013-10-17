@@ -1,5 +1,7 @@
 Dev::Application.routes.draw do
+  resources :appointments
+
   resources :clients
 
-  root :to => 'visitors#new'
+  root :to => 'application#index'
 end

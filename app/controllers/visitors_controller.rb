@@ -1,6 +1,7 @@
 class VisitorsController < ApplicationController
 
-  def new
+  def index 
+    @unpaids = Appointment.where(copay_received: false)
   end
 
 end
